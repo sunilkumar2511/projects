@@ -57,6 +57,7 @@
             border: 0px;
         }
         .a4{
+            padding-top: 20px ;
             padding-left: 10px;
             color: rgb(255, 255, 255);
         }
@@ -65,7 +66,10 @@
             height: 100px;
         }
         .el1a{
-            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
         }
         .rating{
@@ -198,8 +202,9 @@
             background-color:#0aac0a;
             display: flex;
             justify-content: space-around;
-            padding-bottom: 50px;
-            padding-top: -10px;
+            /* padding-bottom: 50px; */
+            /* padding-top: -10px; */
+            margin-top: -50px;
         }
         .loc{
             height: 20px;
@@ -211,8 +216,7 @@
             border-radius: 50%;
         }
         .form{
-            border:1px solid red;
-            height:350px ;
+            /* height:350px ; */
             width: 300px;
             background-color: white;
             border-radius: 20px;
@@ -223,6 +227,8 @@
             box-sizing: border-box;
             padding: 40px;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 5px;
         }
         input{
@@ -230,6 +236,9 @@
             margin: 10px;
             border-radius: 50px;
             color: black;
+        }
+        .hii{
+            text-align: center;
         }
         a{
             text-decoration: none;
@@ -244,6 +253,10 @@
             border-radius: 50px;
             border: none;
         }
+        .w3{
+            text-align: center;
+        }
+        
         .icon:hover{
             transform: scale(1.2);
         }
@@ -262,7 +275,7 @@
         }
         
 
-         @media screen and (min-width:320px) and (max-width:425px){
+         @media screen and (min-width:319px) and (max-width:426px){
             .nav2{
              display: none;
             }
@@ -282,10 +295,17 @@
             .el1a{
                 background-position: center;
                 background-size: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .el1{
+                display: block;
+                justify-content: center;
             }
             .a3{
                 display: block;
-                margin: 50px;
+                margin: 20px;
             }
             .a4{
                 display: flex;
@@ -316,10 +336,11 @@
             .modern{
                 display: block;
                 
+                
             }
             .b12{
-                height: 250px;
-                width: 250px;
+                height: 150px;
+                width: 200px;
             }
             .b1{
                 margin-top: -100px;
@@ -333,25 +354,28 @@
             .ctable{
                 font-size: 10px; 
             }
-            .el1a{
-                align-items: center;
+            .c1{
+                margin-top: 20px;
             }
+            
             .fotter{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                /* background-color: #0aac0a; */
+                /* height: 130vh; */
             }
             .form{
                 text-align: center;
-                height: 300px;
+                margin-top: 100px;
             }
             .subfotter{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-top:10px;
-                height: 320px;
+                /* height: 320px; */
+                
             }
             .ww{
                 display: flex;
@@ -360,11 +384,24 @@
             }
             .cebook{
                 text-align: center;
+                padding: 50px;
             }
             .what{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            .ctable{
+                height: 40vh;
+            }
+            .inside{
+                text-align: center;
+                margin-left: -90px;
+            }
+            .glance{
+                margin-left: -90px;
             }
             .circless{
                 width: 100vw;
@@ -374,8 +411,11 @@
                 flex-direction: column
             }
             .protrait{
-                top: -600px;
-                left: 220px;
+                position: relative;
+                top:-92vh ;
+                left: 28vh;
+                
+                
             }
             .author{
                 display: flex;
@@ -383,16 +423,50 @@
                 align-items: center;
                 text-align: center;
                 margin-top: -750px;
-                font-size: 14px;
+                font-size: 13px;
                 
             }
-           
-
-            
-
-
-        
+            .reviw{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+            }
+            .hii{
+                text-align: center;
+            }
         }
+        @media screen and (min-width:426px) and (max-width:768px){
+            
+            .a2{
+                background-color: #000000;
+                text-align: center;
+            }
+            .modern{
+                display: flex;
+
+            }
+            .b12{
+                height: 250px;
+                width: 300px;
+                margin-top: 60px;
+            }
+            .what{
+                margin-top:-50px;
+            }
+            .author{
+                margin-top: -50px;
+                padding: -20px;
+            }
+            .grid{
+                width: 200px;
+            }
+            
+        }
+            
+        
        
         
 
@@ -425,13 +499,11 @@
             <div class="el1a">
                 <h3 class="a1 text-muted">Introducing ebook</h3>
                 <h2 class="a2 text-dark">ebook landing page for professionals</h2>
-                <span style="display: flex; justify-content: center;"><button class="a3">Discover now</button></span>
+                <span><button class="a3">Discover now</button></span>
                 <span class="a4">Meet the Author</span>
                 
             </div>
-            <!-- <div>
-                <img class="el1b" src="../assects/e-bbok/education-online-books.png" alt="">
-            </div> -->
+            
         </div>
     </div>
     <div class="rating text-center">
@@ -460,8 +532,8 @@
     </div>
     <div class="what" id="thebook">
         <div class="c1">
-            <h4 style="color: orangered;" class="text">What's inside</h2>
-            <h2><B>Preview at glance</B></h2>
+            <h4 class="inside" style="color: orangered;">What's inside</h2>
+            <h2 class="glance"><B>Preview at glance</B></h2>
         </div>
         <div class="ww">
             <div class="ctable">
@@ -499,10 +571,11 @@
     </div>
     <div class="reviews" id="reviewspage">
         <div>
-            <h4 class="text-center" style="color: green;">Reviews</h4>
-            <h2 class="text-center">What people saying...</h2>
+            <h4 class="hii"style="color: green;">Reviews</h4>
+            <h2 class="hii">What people saying...</h2>
         </div>
         <div class="reviw">
+            
             <div class="grid sandy">
                 <img class="artist" src="./e-bbok/profiles/pretty-blonde-woman.jpg" alt="" height="50px" width="50px">
                 <h4>Sandy</h4>
@@ -549,14 +622,14 @@
                 </h3>
                 <p class="p-3">Please tell your friends about our website that we can provide 100% freee CSS templates for everyone. Thanks you for using our templates</p>
             
-            </div> -->
+            </div>
         </div>
     </div>
     <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0aac0a" fill-opacity="1" d="M0,96L26.7,128C53.3,160,107,224,160,224C213.3,224,267,160,320,160C373.3,160,427,224,480,250.7C533.3,277,587,267,640,224C693.3,181,747,107,800,90.7C853.3,75,907,117,960,133.3C1013.3,149,1067,139,1120,122.7C1173.3,107,1227,85,1280,69.3C1333.3,53,1387,43,1413,37.3L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg></div>
     <div class="fotter" id="contactspage">
         
         <div class="form">
-            <form action="">
+            <form>
                 <h1>Get your free ebook</h1>
                 <input type="text" placeholder="You Name">
                 <input type="text" placeholder="your@company.com">
